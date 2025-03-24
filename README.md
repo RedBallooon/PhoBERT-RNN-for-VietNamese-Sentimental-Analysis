@@ -88,5 +88,17 @@ train_loss_history, train_acc_history = train_model(model, dataloaders, epochs=7
 text_input = "Tên đó hắn ta đã lấy tiền của tôi"
 result = predict_sentiment(text_input, model, tokenizer, sentiment_lexicon)
 ```
+
+3. **Thực hiện dự đoán sau khi train model mới**:
+
 ![After](https://github.com/RedBallooon/PhoBERT-RNN-for-VietNamese-Sentimental-Analysis/blob/51fb66332603246d820488b5b9e2652dc2bbb223/img/after.png)
+
+
+
+![Test](https://github.com/RedBallooon/PhoBERT-RNN-for-VietNamese-Sentimental-Analysis/blob/93912668ee2466ccde6bb9113586e6ffe9cf3beb/img/image_2025-03-24_230837338.png)
+
+
+
+
+
 
