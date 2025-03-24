@@ -1,1 +1,1 @@
-# PhoBERT-RNN-for-VietNamese-Sentimental-Analysis
+# Phân Tích Cảm Xúc Tiếng Việt Sử Dụng PhoBERT và Mô Hình RNN
