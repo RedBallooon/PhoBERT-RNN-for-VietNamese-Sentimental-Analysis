@@ -64,7 +64,7 @@ train_loss_history, train_acc_history = train_model(model, dataloaders, epochs=7
 ### 3.Thực hiển kiểm tra với text ngẫu nhiên sau khi huấn luyện mô hình
 
 1. **Model đầu được huấn luyện với PhoBERT - RNN**:
-
+![ Biểu đồ tổng quan quá trình huấn luận model PhoBERT với RNN](img/before optimized.png)
 2. **Model được huấn luyện với PhoBERT - RNN kết hợp với dict từ khóa**: 
 ```python
 text_input = "Tên đó hắn ta đã lấy tiền của tôi"
