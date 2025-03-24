@@ -41,3 +41,34 @@
 Cài đặt các thư viện này thông qua `pip`: 
 ```bash
 pip install torch transformers pandas matplotlib seaborn
+```
+
+## Cách Sử Dụng
+
+### 1. Chuẩn Bị Dữ Liệu
+
+Đảm bảo rằng bạn đã chuẩn bị các file dữ liệu sau:
+- `train_data.xlsx`: Dữ liệu huấn luyện.
+- `test_data.xlsx`: Dữ liệu kiểm tra.
+- `valid_data.xlsx`: Dữ liệu kiểm tra vali.
+- `VietSentiWordnet.txt`: Từ điển cảm xúc tiếng Việt (VietSentiWordnet).
+
+### 2. Huấn Luyện Mô Hình
+
+Chạy đoạn mã dưới đây để huấn luyện mô hình:
+
+```python
+train_loss_history, train_acc_history = train_model(model, dataloaders, epochs=7)
+```
+
+### 3.Thực hiển kiểm tra với text ngẫu nhiên sau khi huấn luyện mô hình
+
+1. **Model đầu được huấn luyện với PhoBERT - RNN**:
+
+2. **Model được huấn luyện với PhoBERT - RNN kết hợp với dict từ khóa**: 
+```python
+text_input = "Tên đó hắn ta đã lấy tiền của tôi"
+result = predict_sentiment(text_input, model, tokenizer, sentiment_lexicon)
+```
+
+
