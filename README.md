@@ -17,13 +17,13 @@
    - Tối ưu mô hình bằng cách kết hợp các điểm số từ từ điển cảm xúc vào kết quả dự đoán của mô hình.
 
 ## Cấu Trúc Dự Án
-├── data/
-│   ├── train_data.xlsx
-│   ├── test_data.xlsx
-│   ├── valid_data.xlsx
-│   └── VietSentiWordnet.txt
-├── model/
-│   └── phobert_sentiment_vsmec.pth
-├── notebooks/
-│   └── sentiment_analysis.ipynb
-└── README.md
+| Thư mục      | Tệp tin                              |
+|--------------|--------------------------------------|
+| `data/`      | `train_data.xlsx`                    |
+|              | `test_data.xlsx`                     |
+|              | `valid_data.xlsx`                    |
+|              | `VietSentiWordnet.txt`               |
+| `model/`     | `phobert_sentiment_vsmec.pth`        |
+| `notebooks/` | `sentiment_analysis.ipynb`           |
+| `README.md`  |                                      |
+
