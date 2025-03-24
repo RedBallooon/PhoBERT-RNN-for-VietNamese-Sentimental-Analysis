@@ -27,3 +27,17 @@
 | `notebooks/` | `sentiment_analysis.ipynb`           |
 | `README.md`  |                                      |
 
+
+
+## Các Thư Viện Yêu Cầu
+
+- `torch`
+- `transformers`
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `re`
+
+Cài đặt các thư viện này thông qua `pip`: 
+```bash
+pip install torch transformers pandas matplotlib seaborn
