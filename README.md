@@ -16,6 +16,21 @@
    - Đánh giá hiệu suất mô hình bằng cách sử dụng chỉ số độ chính xác trên bộ kiểm tra.
    - Tối ưu mô hình bằng cách kết hợp các điểm số từ từ điển cảm xúc vào kết quả dự đoán của mô hình.
 
+## Mức phân bố dữ liệu 
+
+1. **Trước khi encoding**:
+
+![dataDistribute](https://github.com/RedBallooon/PhoBERT-RNN-for-VietNamese-Sentimental-Analysis/blob/51fb66332603246d820488b5b9e2652dc2bbb223/img/Data%20Distribute.png)
+
+2. **Sau khi encoding**:
+
+![AfterEncod](https://github.com/RedBallooon/PhoBERT-RNN-for-VietNamese-Sentimental-Analysis/blob/51fb66332603246d820488b5b9e2652dc2bbb223/img/after%20encoding.png)
+
+## Từ điển từ khóa VietSentiWordnet.txt
+
+![Dict](https://github.com/RedBallooon/PhoBERT-RNN-for-VietNamese-Sentimental-Analysis/blob/934b15d3b3295c14df19aa50d905e2fd73f05aed/img/image_2025-03-24_224848796.png)
+
+
 ## Cấu Trúc Dự Án
 | Thư mục      | Tệp tin                              |
 |--------------|--------------------------------------|
@@ -64,11 +79,14 @@ train_loss_history, train_acc_history = train_model(model, dataloaders, epochs=7
 ### 3.Thực hiển kiểm tra với text ngẫu nhiên sau khi huấn luyện mô hình
 
 1. **Model đầu được huấn luyện với PhoBERT - RNN**:
-![ Biểu đồ tổng quan quá trình huấn luận model PhoBERT với RNN](img/before optimized.png)
+
+![Before](https://github.com/RedBallooon/PhoBERT-RNN-for-VietNamese-Sentimental-Analysis/blob/51fb66332603246d820488b5b9e2652dc2bbb223/img/before%20optimized.png)
+
+
 2. **Model được huấn luyện với PhoBERT - RNN kết hợp với dict từ khóa**: 
 ```python
 text_input = "Tên đó hắn ta đã lấy tiền của tôi"
 result = predict_sentiment(text_input, model, tokenizer, sentiment_lexicon)
 ```
-
+![After](https://github.com/RedBallooon/PhoBERT-RNN-for-VietNamese-Sentimental-Analysis/blob/51fb66332603246d820488b5b9e2652dc2bbb223/img/after.png)
 
